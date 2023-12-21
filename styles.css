@@ -63,3 +63,13 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: #1f2937;
+  color: white;
+}
