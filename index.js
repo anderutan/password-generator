@@ -77,29 +77,26 @@ function generateRandomPwd(array) {
 }
 
 pwdBtn.addEventListener('click', () => {
+  pwd1.style.cursor = 'pointer';
+  pwd2.style.cursor = 'pointer';
+});
+
+pwdBtn.addEventListener('click', () => {
   if (includeSym && includeNum) {
     let charSymNum = characters.concat(symbols, numbers);
     pwd1.textContent = generateRandomPwd(charSymNum);
-    pwd1.style.cursor = 'pointer';
     pwd2.textContent = generateRandomPwd(charSymNum);
-    pwd2.style.cursor = 'pointer';
   } else if (includeSym && !includeNum) {
     let charSym = characters.concat(symbols);
     pwd1.textContent = generateRandomPwd(charSym);
-    pwd1.style.cursor = 'pointer';
     pwd2.textContent = generateRandomPwd(charSym);
-    pwd2.style.cursor = 'pointer';
   } else if (!includeSym && includeNum) {
     let charNum = characters.concat(numbers);
     pwd1.textContent = generateRandomPwd(charNum);
-    pwd1.style.cursor = 'pointer';
     pwd2.textContent = generateRandomPwd(charNum);
-    pwd2.style.cursor = 'pointer';
   } else {
     pwd1.textContent = generateRandomPwd(characters);
-    pwd1.style.cursor = 'pointer';
     pwd2.textContent = generateRandomPwd(characters);
-    pwd2.style.cursor = 'pointer';
   }
 });
 
