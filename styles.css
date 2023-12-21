@@ -1,3 +1,65 @@
 body {
   margin: 0;
+  box-sizing: content-box;
+  background-color: #1c1c1c;
+}
+
+.section {
+  width: 350px;
+  background-color: #1f2937;
+  margin: 50px auto;
+  color: white;
+  padding: 70px 40px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.title {
+  margin: 0;
+}
+
+.highlight {
+  color: #10b981;
+}
+
+.description {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.pwd-btn {
+  padding: 7px 14px;
+  background-color: #10b981;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.pwd-section {
+  border-top: 2px solid #273549;
+  padding-top: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.pwd-space {
+  width: 80%;
+  height: 25px;
+  background: #273549;
+  border-radius: 5px;
+}
+
+.theme-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.theme-btn {
+  background-color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
